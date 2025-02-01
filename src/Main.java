@@ -2,15 +2,14 @@ public class Main {
     public static void main(String[] args) {
 
         int amount = 100;
-        int replenishment1 = 850;
-        int replenishment2 = 650;
+        int replenishment = 1100;
 
-        int balance = amount + replenishment1 + replenishment2;
-        System.out.println("Balance:" + balance + " RUB");
+        int balance = amount + replenishment;
 
-        if (balance > 1000) {
-            int bonus = balance / 100;
+        if (replenishment > 1000) {
+            int bonus = replenishment / 100;
             System.out.println("Total bonus:" + bonus + " RUB");
+            System.out.println("Balance:" + (balance + bonus) + "RUB");
         } else {
             System.out.println("Total bonus:none");
         }
