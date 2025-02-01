@@ -12,6 +12,7 @@ public class Main {
             System.out.println("Balance:" + (balance + bonus) + "RUB");
         } else {
             System.out.println("Total bonus:none");
+            System.out.println("Balance:" + balance + "RUB");
         }
     }
 }
